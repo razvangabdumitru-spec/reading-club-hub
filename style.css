@@ -1,0 +1,28 @@
+/* Minimal styling for Lab Reading Club Hub */
+
+:root{
+  --bg:#ffffff; --text:#111827; --muted:#6b7280; --accent:#1f2937; --border:#e5e7eb;
+  --max-width:900px; --pad:18px;
+}
+
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:var(--text); margin:0; background:var(--bg);}
+.site-header{background:var(--accent); color:#fff; padding:24px; text-align:center}
+.site-header h1{margin:0; font-size:1.5rem}
+.content{max-width:var(--max-width); margin:28px auto; padding:0 var(--pad)}
+.tagline{color:var(--muted)}
+.intro p{line-height:1.6}
+.meeting-box{border:1px solid var(--border); padding:12px; background:#fbfbfb; width:320px}
+.organizer ul{list-style:none; padding:0}
+.organizer li{margin:6px 0}
+.site-nav{margin-top:18px}
+.site-nav a{color:var(--accent); text-decoration:none}
+.site-footer{padding:18px; text-align:center; color:var(--muted); font-size:0.9rem}
+
+/* Table styling */
+table.schedule{width:100%; border-collapse:collapse; margin-top:12px}
+table.schedule th, table.schedule td{border:1px solid var(--border); padding:10px; text-align:left}
+table.schedule thead th{background:#f3f4f6; color:var(--muted)}
+
+/* Responsive */
+@media (max-width:640px){.meeting-box{width:100%} table.schedule th, table.schedule td{font-size:0.95rem}}
